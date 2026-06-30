@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.subtitlepause.translator'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.subtitlepause.translator'
+        minSdk 26
+        targetSdk 35
+        versionCode 44
+        versionName '0.1.43-all-devices-full-favorites'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'com.google.mlkit:text-recognition:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-japanese:16.0.1'
+}
